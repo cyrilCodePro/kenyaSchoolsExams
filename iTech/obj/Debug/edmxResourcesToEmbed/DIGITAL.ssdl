@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DIGITALModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AddStudents">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BIRTH" Type="int" Nullable="false" />
+    <Property Name="KCPE" Type="int" Nullable="false" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RESIDENCE" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PARENTS" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PHONE" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EMAIL" Type="nvarchar(max)" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="BALANCE" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="INVOICE FEE" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="GENDER" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="TERM" Type="nchar" MaxLength="10" />
+    <Property Name="CAT" Type="nchar" MaxLength="10" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="HOMESCI" Type="nchar" MaxLength="10" />
+    <Property Name="COMP" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="catAll">
+    <Key>
+      <PropertyRef Name="Adm No" />
+    </Key>
+    <Property Name="Name" Type="nchar" MaxLength="10" />
+    <Property Name="Adm No" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="KCPE" Type="nchar" MaxLength="10" />
+    <Property Name="Stream" Type="nchar" MaxLength="10" />
+    <Property Name="Form" Type="nchar" MaxLength="10" />
+    <Property Name="Cat" Type="nchar" MaxLength="10" />
+    <Property Name="Terrm" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="Total" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="Grade" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Cats">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KCPE" Type="int" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="Total" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="Term" Type="nchar" MaxLength="10" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" />
+    <Property Name="CAT" Type="nchar" MaxLength="10" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" />
+    <Property Name="Grade" Type="nchar" MaxLength="10" />
+    <Property Name="EngGrade" Type="nchar" MaxLength="10" />
+    <Property Name="KisGrade" Type="nchar" MaxLength="10" />
+    <Property Name="ChemGrade" Type="nchar" MaxLength="10" />
+    <Property Name="MathGrade" Type="nchar" MaxLength="10" />
+    <Property Name="HistGrade" Type="nchar" MaxLength="10" />
+    <Property Name="PhyGrade" Type="nchar" MaxLength="10" />
+    <Property Name="GeogGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BstGrade" Type="nchar" MaxLength="10" />
+    <Property Name="CreGrade" Type="nchar" MaxLength="10" />
+    <Property Name="AgricGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BioGrade" Type="nchar" MaxLength="10" />
+    <Property Name="EngFinal" Type="nchar" MaxLength="10" />
+    <Property Name="KisFinal" Type="nchar" MaxLength="10" />
+    <Property Name="MathsFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ChemFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BioFinal" Type="nchar" MaxLength="10" />
+    <Property Name="PhyFinal" Type="nchar" MaxLength="10" />
+    <Property Name="GeogFinal" Type="nchar" MaxLength="10" />
+    <Property Name="HistFinal" Type="nchar" MaxLength="10" />
+    <Property Name="CreFinal" Type="nchar" MaxLength="10" />
+    <Property Name="AgricFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BstFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ClassPosition" Type="nchar" MaxLength="10" />
+    <Property Name="StreamPosition" Type="nchar" MaxLength="10" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CatsHistory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KCPE" Type="int" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="Total" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="Term" Type="nchar" MaxLength="10" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" />
+    <Property Name="CAT" Type="nchar" MaxLength="10" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" />
+    <Property Name="Grade" Type="nchar" MaxLength="10" />
+    <Property Name="EngGrade" Type="nchar" MaxLength="10" />
+    <Property Name="KisGrade" Type="nchar" MaxLength="10" />
+    <Property Name="ChemGrade" Type="nchar" MaxLength="10" />
+    <Property Name="MathGrade" Type="nchar" MaxLength="10" />
+    <Property Name="HistGrade" Type="nchar" MaxLength="10" />
+    <Property Name="PhyGrade" Type="nchar" MaxLength="10" />
+    <Property Name="GeogGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BstGrade" Type="nchar" MaxLength="10" />
+    <Property Name="CreGrade" Type="nchar" MaxLength="10" />
+    <Property Name="AgricGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BioGrade" Type="nchar" MaxLength="10" />
+    <Property Name="EngFinal" Type="nchar" MaxLength="10" />
+    <Property Name="KisFinal" Type="nchar" MaxLength="10" />
+    <Property Name="MathsFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ChemFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BioFinal" Type="nchar" MaxLength="10" />
+    <Property Name="PhyFinal" Type="nchar" MaxLength="10" />
+    <Property Name="GeogFinal" Type="nchar" MaxLength="10" />
+    <Property Name="HistFinal" Type="nchar" MaxLength="10" />
+    <Property Name="CreFinal" Type="nchar" MaxLength="10" />
+    <Property Name="AgricFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BstFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ClassPosition" Type="nchar" MaxLength="10" />
+    <Property Name="StreamPosition" Type="nchar" MaxLength="10" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CatsMarkSheetBlank">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KCPE" Type="int" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="Total" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="Term" Type="nchar" MaxLength="10" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" />
+    <Property Name="CAT" Type="nchar" MaxLength="10" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" />
+    <Property Name="Grade" Type="nchar" MaxLength="10" />
+    <Property Name="EngGrade" Type="nchar" MaxLength="10" />
+    <Property Name="KisGrade" Type="nchar" MaxLength="10" />
+    <Property Name="ChemGrade" Type="nchar" MaxLength="10" />
+    <Property Name="MathGrade" Type="nchar" MaxLength="10" />
+    <Property Name="HistGrade" Type="nchar" MaxLength="10" />
+    <Property Name="PhyGrade" Type="nchar" MaxLength="10" />
+    <Property Name="GeogGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BstGrade" Type="nchar" MaxLength="10" />
+    <Property Name="CreGrade" Type="nchar" MaxLength="10" />
+    <Property Name="AgricGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BioGrade" Type="nchar" MaxLength="10" />
+    <Property Name="EngFinal" Type="nchar" MaxLength="10" />
+    <Property Name="KisFinal" Type="nchar" MaxLength="10" />
+    <Property Name="MathsFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ChemFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BioFinal" Type="nchar" MaxLength="10" />
+    <Property Name="PhyFinal" Type="nchar" MaxLength="10" />
+    <Property Name="GeogFinal" Type="nchar" MaxLength="10" />
+    <Property Name="HistFinal" Type="nchar" MaxLength="10" />
+    <Property Name="CreFinal" Type="nchar" MaxLength="10" />
+    <Property Name="AgricFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BstFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ClassPosition" Type="nchar" MaxLength="10" />
+    <Property Name="StreamPosition" Type="nchar" MaxLength="10" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Exams">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KCPE" Type="int" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="Total" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="Term" Type="nchar" MaxLength="10" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" />
+    <Property Name="CAT" Type="nchar" MaxLength="10" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" />
+    <Property Name="Grade" Type="nchar" MaxLength="10" />
+    <Property Name="EngGrade" Type="nchar" MaxLength="10" />
+    <Property Name="KisGrade" Type="nchar" MaxLength="10" />
+    <Property Name="ChemGrade" Type="nchar" MaxLength="10" />
+    <Property Name="MathGrade" Type="nchar" MaxLength="10" />
+    <Property Name="HistGrade" Type="nchar" MaxLength="10" />
+    <Property Name="PhyGrade" Type="nchar" MaxLength="10" />
+    <Property Name="GeogGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BstGrade" Type="nchar" MaxLength="10" />
+    <Property Name="CreGrade" Type="nchar" MaxLength="10" />
+    <Property Name="AgricGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BioGrade" Type="nchar" MaxLength="10" />
+    <Property Name="EngFinal" Type="nchar" MaxLength="10" />
+    <Property Name="KisFinal" Type="nchar" MaxLength="10" />
+    <Property Name="MathsFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ChemFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BioFinal" Type="nchar" MaxLength="10" />
+    <Property Name="PhyFinal" Type="nchar" MaxLength="10" />
+    <Property Name="GeogFinal" Type="nchar" MaxLength="10" />
+    <Property Name="HistFinal" Type="nchar" MaxLength="10" />
+    <Property Name="CreFinal" Type="nchar" MaxLength="10" />
+    <Property Name="AgricFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BstFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ClassPosition" Type="nchar" MaxLength="10" />
+    <Property Name="StreamPosition" Type="nchar" MaxLength="10" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ExamsHistory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KCPE" Type="int" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="Total" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="Term" Type="nchar" MaxLength="10" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" />
+    <Property Name="CAT" Type="nchar" MaxLength="10" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" />
+    <Property Name="Grade" Type="nchar" MaxLength="10" />
+    <Property Name="EngGrade" Type="nchar" MaxLength="10" />
+    <Property Name="KisGrade" Type="nchar" MaxLength="10" />
+    <Property Name="ChemGrade" Type="nchar" MaxLength="10" />
+    <Property Name="MathGrade" Type="nchar" MaxLength="10" />
+    <Property Name="HistGrade" Type="nchar" MaxLength="10" />
+    <Property Name="PhyGrade" Type="nchar" MaxLength="10" />
+    <Property Name="GeogGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BstGrade" Type="nchar" MaxLength="10" />
+    <Property Name="CreGrade" Type="nchar" MaxLength="10" />
+    <Property Name="AgricGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BioGrade" Type="nchar" MaxLength="10" />
+    <Property Name="EngFinal" Type="nchar" MaxLength="10" />
+    <Property Name="KisFinal" Type="nchar" MaxLength="10" />
+    <Property Name="MathsFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ChemFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BioFinal" Type="nchar" MaxLength="10" />
+    <Property Name="PhyFinal" Type="nchar" MaxLength="10" />
+    <Property Name="GeogFinal" Type="nchar" MaxLength="10" />
+    <Property Name="HistFinal" Type="nchar" MaxLength="10" />
+    <Property Name="CreFinal" Type="nchar" MaxLength="10" />
+    <Property Name="AgricFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BstFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ClassPosition" Type="nchar" MaxLength="10" />
+    <Property Name="StreamPosition" Type="nchar" MaxLength="10" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExamsMarkSheetBlank">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KCPE" Type="int" />
+    <Property Name="ENG" Type="nchar" MaxLength="10" />
+    <Property Name="KIS" Type="nchar" MaxLength="10" />
+    <Property Name="MATHS" Type="nchar" MaxLength="10" />
+    <Property Name="CHEM" Type="nchar" MaxLength="10" />
+    <Property Name="BIO" Type="nchar" MaxLength="10" />
+    <Property Name="PHY" Type="nchar" MaxLength="10" />
+    <Property Name="GEOG" Type="nchar" MaxLength="10" />
+    <Property Name="HIST" Type="nchar" MaxLength="10" />
+    <Property Name="CRE" Type="nchar" MaxLength="10" />
+    <Property Name="AGRIC" Type="nchar" MaxLength="10" />
+    <Property Name="BST" Type="nchar" MaxLength="10" />
+    <Property Name="Total" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="Year" Type="nchar" MaxLength="10" />
+    <Property Name="Term" Type="nchar" MaxLength="10" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" />
+    <Property Name="CAT" Type="nchar" MaxLength="10" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" />
+    <Property Name="Grade" Type="nchar" MaxLength="10" />
+    <Property Name="EngGrade" Type="nchar" MaxLength="10" />
+    <Property Name="KisGrade" Type="nchar" MaxLength="10" />
+    <Property Name="ChemGrade" Type="nchar" MaxLength="10" />
+    <Property Name="MathGrade" Type="nchar" MaxLength="10" />
+    <Property Name="HistGrade" Type="nchar" MaxLength="10" />
+    <Property Name="PhyGrade" Type="nchar" MaxLength="10" />
+    <Property Name="GeogGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BstGrade" Type="nchar" MaxLength="10" />
+    <Property Name="CreGrade" Type="nchar" MaxLength="10" />
+    <Property Name="AgricGrade" Type="nchar" MaxLength="10" />
+    <Property Name="BioGrade" Type="nchar" MaxLength="10" />
+    <Property Name="EngFinal" Type="nchar" MaxLength="10" />
+    <Property Name="KisFinal" Type="nchar" MaxLength="10" />
+    <Property Name="MathsFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ChemFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BioFinal" Type="nchar" MaxLength="10" />
+    <Property Name="PhyFinal" Type="nchar" MaxLength="10" />
+    <Property Name="GeogFinal" Type="nchar" MaxLength="10" />
+    <Property Name="HistFinal" Type="nchar" MaxLength="10" />
+    <Property Name="CreFinal" Type="nchar" MaxLength="10" />
+    <Property Name="AgricFinal" Type="nchar" MaxLength="10" />
+    <Property Name="BstFinal" Type="nchar" MaxLength="10" />
+    <Property Name="ClassPosition" Type="nchar" MaxLength="10" />
+    <Property Name="StreamPosition" Type="nchar" MaxLength="10" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="FEE">
+    <Key>
+      <PropertyRef Name="student_id" />
+    </Key>
+    <Property Name="student_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" />
+    <Property Name="INVOICE FEE" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="BALANCE" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="iTech">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADM" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nchar" MaxLength="10" />
+    <Property Name="SUBJECT" Type="nvarchar" MaxLength="50" />
+    <Property Name="subjectMark" Type="int" />
+    <Property Name="GRADE" Type="nchar" MaxLength="10" />
+    <Property Name="Points" Type="nchar" MaxLength="10" />
+    <Property Name="StrPos" Type="nchar" MaxLength="10" />
+    <Property Name="ClassPos" Type="nchar" MaxLength="10" />
+    <Property Name="SubjPosition" Type="nchar" MaxLength="10" />
+    <Property Name="GenderPosition" Type="nchar" MaxLength="10" />
+    <Property Name="STREAM" Type="nchar" MaxLength="10" />
+    <Property Name="FORM" Type="nchar" MaxLength="10" />
+    <Property Name="CurrentYr" Type="nchar" MaxLength="10" />
+    <Property Name="CurrentTerm" Type="nchar" MaxLength="10" />
+    <Property Name="Cat" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="LOGIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ManageSchool">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SCHOOL" Type="nchar" MaxLength="10" />
+    <Property Name="SUBJECTS" Type="nchar" MaxLength="10" />
+    <Property Name="STREAMS" Type="nchar" MaxLength="10" />
+    <Property Name="YEAR" Type="nchar" MaxLength="10" />
+    <Property Name="TERM" Type="nchar" MaxLength="10" />
+    <Property Name="CATS" Type="nchar" MaxLength="10" />
+    <Property Name="PRINCIPAL" Type="nchar" MaxLength="10" />
+    <Property Name="DEPUTY" Type="nchar" MaxLength="10" />
+    <Property Name="EMAIL" Type="nchar" MaxLength="10" />
+    <Property Name="PHONE" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DIGITAL.dbo.PivotExample' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PivotExample">
+    <Key>
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="Year" Type="smallint" Nullable="false" />
+    <Property Name="SalesAmount" Type="money" />
+  </EntityType>
+  <EntityType Name="subject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Subj1" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_iTech_ToTable">
+    <End Role="AddStudents" Type="Self.AddStudents" Multiplicity="0..1" />
+    <End Role="iTech" Type="Self.iTech" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddStudents">
+        <PropertyRef Name="ADM" />
+      </Principal>
+      <Dependent Role="iTech">
+        <PropertyRef Name="ADM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="EXAMSGRADING" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="FILLCATS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="GRADING" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="InsertRecord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="ADM" Type="nvarchar" Mode="In" />
+    <Parameter Name="KCPE" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="UPDATECATS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="DIGITALModelStoreContainer">
+    <EntitySet Name="AddStudents" EntityType="Self.AddStudents" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="catAll" EntityType="Self.catAll" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cats" EntityType="Self.Cats" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CatsHistory" EntityType="Self.CatsHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CatsMarkSheetBlank" EntityType="Self.CatsMarkSheetBlank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Exams" EntityType="Self.Exams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExamsHistory" EntityType="Self.ExamsHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExamsMarkSheetBlank" EntityType="Self.ExamsMarkSheetBlank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FEE" EntityType="Self.FEE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="iTech" EntityType="Self.iTech" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOGIN" EntityType="Self.LOGIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ManageSchool" EntityType="Self.ManageSchool" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="subject" EntityType="Self.subject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PivotExample" EntityType="Self.PivotExample" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PivotExample].[Country] AS [Country], 
+    [PivotExample].[Year] AS [Year], 
+    [PivotExample].[SalesAmount] AS [SalesAmount]
+    FROM [dbo].[PivotExample] AS [PivotExample]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_iTech_ToTable" Association="Self.FK_iTech_ToTable">
+      <End Role="AddStudents" EntitySet="AddStudents" />
+      <End Role="iTech" EntitySet="iTech" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DIGITALModelStoreContainer" CdmEntityContainer="DIGITALEntities">
+    <EntitySetMapping Name="AddStudents">
+      <EntityTypeMapping TypeName="DIGITALModel.AddStudent">
+        <MappingFragment StoreEntitySet="AddStudents">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BIRTH" ColumnName="BIRTH" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="RESIDENCE" ColumnName="RESIDENCE" />
+          <ScalarProperty Name="PARENTS" ColumnName="PARENTS" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+          <ScalarProperty Name="INVOICE_FEE" ColumnName="INVOICE FEE" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="TERM" ColumnName="TERM" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="HOMESCI" ColumnName="HOMESCI" />
+          <ScalarProperty Name="COMP" ColumnName="COMP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catAlls">
+      <EntityTypeMapping TypeName="DIGITALModel.catAll">
+        <MappingFragment StoreEntitySet="catAll">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Adm_No" ColumnName="Adm No" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="Stream" ColumnName="Stream" />
+          <ScalarProperty Name="Form" ColumnName="Form" />
+          <ScalarProperty Name="Cat" ColumnName="Cat" />
+          <ScalarProperty Name="Terrm" ColumnName="Terrm" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cats">
+      <EntityTypeMapping TypeName="DIGITALModel.Cat">
+        <MappingFragment StoreEntitySet="Cats">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="CAT1" ColumnName="CAT" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EngGrade" ColumnName="EngGrade" />
+          <ScalarProperty Name="KisGrade" ColumnName="KisGrade" />
+          <ScalarProperty Name="ChemGrade" ColumnName="ChemGrade" />
+          <ScalarProperty Name="MathGrade" ColumnName="MathGrade" />
+          <ScalarProperty Name="HistGrade" ColumnName="HistGrade" />
+          <ScalarProperty Name="PhyGrade" ColumnName="PhyGrade" />
+          <ScalarProperty Name="GeogGrade" ColumnName="GeogGrade" />
+          <ScalarProperty Name="BstGrade" ColumnName="BstGrade" />
+          <ScalarProperty Name="CreGrade" ColumnName="CreGrade" />
+          <ScalarProperty Name="AgricGrade" ColumnName="AgricGrade" />
+          <ScalarProperty Name="BioGrade" ColumnName="BioGrade" />
+          <ScalarProperty Name="EngFinal" ColumnName="EngFinal" />
+          <ScalarProperty Name="KisFinal" ColumnName="KisFinal" />
+          <ScalarProperty Name="MathsFinal" ColumnName="MathsFinal" />
+          <ScalarProperty Name="ChemFinal" ColumnName="ChemFinal" />
+          <ScalarProperty Name="BioFinal" ColumnName="BioFinal" />
+          <ScalarProperty Name="PhyFinal" ColumnName="PhyFinal" />
+          <ScalarProperty Name="GeogFinal" ColumnName="GeogFinal" />
+          <ScalarProperty Name="HistFinal" ColumnName="HistFinal" />
+          <ScalarProperty Name="CreFinal" ColumnName="CreFinal" />
+          <ScalarProperty Name="AgricFinal" ColumnName="AgricFinal" />
+          <ScalarProperty Name="BstFinal" ColumnName="BstFinal" />
+          <ScalarProperty Name="ClassPosition" ColumnName="ClassPosition" />
+          <ScalarProperty Name="StreamPosition" ColumnName="StreamPosition" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatsHistories">
+      <EntityTypeMapping TypeName="DIGITALModel.CatsHistory">
+        <MappingFragment StoreEntitySet="CatsHistory">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EngGrade" ColumnName="EngGrade" />
+          <ScalarProperty Name="KisGrade" ColumnName="KisGrade" />
+          <ScalarProperty Name="ChemGrade" ColumnName="ChemGrade" />
+          <ScalarProperty Name="MathGrade" ColumnName="MathGrade" />
+          <ScalarProperty Name="HistGrade" ColumnName="HistGrade" />
+          <ScalarProperty Name="PhyGrade" ColumnName="PhyGrade" />
+          <ScalarProperty Name="GeogGrade" ColumnName="GeogGrade" />
+          <ScalarProperty Name="BstGrade" ColumnName="BstGrade" />
+          <ScalarProperty Name="CreGrade" ColumnName="CreGrade" />
+          <ScalarProperty Name="AgricGrade" ColumnName="AgricGrade" />
+          <ScalarProperty Name="BioGrade" ColumnName="BioGrade" />
+          <ScalarProperty Name="EngFinal" ColumnName="EngFinal" />
+          <ScalarProperty Name="KisFinal" ColumnName="KisFinal" />
+          <ScalarProperty Name="MathsFinal" ColumnName="MathsFinal" />
+          <ScalarProperty Name="ChemFinal" ColumnName="ChemFinal" />
+          <ScalarProperty Name="BioFinal" ColumnName="BioFinal" />
+          <ScalarProperty Name="PhyFinal" ColumnName="PhyFinal" />
+          <ScalarProperty Name="GeogFinal" ColumnName="GeogFinal" />
+          <ScalarProperty Name="HistFinal" ColumnName="HistFinal" />
+          <ScalarProperty Name="CreFinal" ColumnName="CreFinal" />
+          <ScalarProperty Name="AgricFinal" ColumnName="AgricFinal" />
+          <ScalarProperty Name="BstFinal" ColumnName="BstFinal" />
+          <ScalarProperty Name="ClassPosition" ColumnName="ClassPosition" />
+          <ScalarProperty Name="StreamPosition" ColumnName="StreamPosition" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatsMarkSheetBlanks">
+      <EntityTypeMapping TypeName="DIGITALModel.CatsMarkSheetBlank">
+        <MappingFragment StoreEntitySet="CatsMarkSheetBlank">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EngGrade" ColumnName="EngGrade" />
+          <ScalarProperty Name="KisGrade" ColumnName="KisGrade" />
+          <ScalarProperty Name="ChemGrade" ColumnName="ChemGrade" />
+          <ScalarProperty Name="MathGrade" ColumnName="MathGrade" />
+          <ScalarProperty Name="HistGrade" ColumnName="HistGrade" />
+          <ScalarProperty Name="PhyGrade" ColumnName="PhyGrade" />
+          <ScalarProperty Name="GeogGrade" ColumnName="GeogGrade" />
+          <ScalarProperty Name="BstGrade" ColumnName="BstGrade" />
+          <ScalarProperty Name="CreGrade" ColumnName="CreGrade" />
+          <ScalarProperty Name="AgricGrade" ColumnName="AgricGrade" />
+          <ScalarProperty Name="BioGrade" ColumnName="BioGrade" />
+          <ScalarProperty Name="EngFinal" ColumnName="EngFinal" />
+          <ScalarProperty Name="KisFinal" ColumnName="KisFinal" />
+          <ScalarProperty Name="MathsFinal" ColumnName="MathsFinal" />
+          <ScalarProperty Name="ChemFinal" ColumnName="ChemFinal" />
+          <ScalarProperty Name="BioFinal" ColumnName="BioFinal" />
+          <ScalarProperty Name="PhyFinal" ColumnName="PhyFinal" />
+          <ScalarProperty Name="GeogFinal" ColumnName="GeogFinal" />
+          <ScalarProperty Name="HistFinal" ColumnName="HistFinal" />
+          <ScalarProperty Name="CreFinal" ColumnName="CreFinal" />
+          <ScalarProperty Name="AgricFinal" ColumnName="AgricFinal" />
+          <ScalarProperty Name="BstFinal" ColumnName="BstFinal" />
+          <ScalarProperty Name="ClassPosition" ColumnName="ClassPosition" />
+          <ScalarProperty Name="StreamPosition" ColumnName="StreamPosition" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exams">
+      <EntityTypeMapping TypeName="DIGITALModel.Exam">
+        <MappingFragment StoreEntitySet="Exams">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EngGrade" ColumnName="EngGrade" />
+          <ScalarProperty Name="KisGrade" ColumnName="KisGrade" />
+          <ScalarProperty Name="ChemGrade" ColumnName="ChemGrade" />
+          <ScalarProperty Name="MathGrade" ColumnName="MathGrade" />
+          <ScalarProperty Name="HistGrade" ColumnName="HistGrade" />
+          <ScalarProperty Name="PhyGrade" ColumnName="PhyGrade" />
+          <ScalarProperty Name="GeogGrade" ColumnName="GeogGrade" />
+          <ScalarProperty Name="BstGrade" ColumnName="BstGrade" />
+          <ScalarProperty Name="CreGrade" ColumnName="CreGrade" />
+          <ScalarProperty Name="AgricGrade" ColumnName="AgricGrade" />
+          <ScalarProperty Name="BioGrade" ColumnName="BioGrade" />
+          <ScalarProperty Name="EngFinal" ColumnName="EngFinal" />
+          <ScalarProperty Name="KisFinal" ColumnName="KisFinal" />
+          <ScalarProperty Name="MathsFinal" ColumnName="MathsFinal" />
+          <ScalarProperty Name="ChemFinal" ColumnName="ChemFinal" />
+          <ScalarProperty Name="BioFinal" ColumnName="BioFinal" />
+          <ScalarProperty Name="PhyFinal" ColumnName="PhyFinal" />
+          <ScalarProperty Name="GeogFinal" ColumnName="GeogFinal" />
+          <ScalarProperty Name="HistFinal" ColumnName="HistFinal" />
+          <ScalarProperty Name="CreFinal" ColumnName="CreFinal" />
+          <ScalarProperty Name="AgricFinal" ColumnName="AgricFinal" />
+          <ScalarProperty Name="BstFinal" ColumnName="BstFinal" />
+          <ScalarProperty Name="ClassPosition" ColumnName="ClassPosition" />
+          <ScalarProperty Name="StreamPosition" ColumnName="StreamPosition" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamsHistories">
+      <EntityTypeMapping TypeName="DIGITALModel.ExamsHistory">
+        <MappingFragment StoreEntitySet="ExamsHistory">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EngGrade" ColumnName="EngGrade" />
+          <ScalarProperty Name="KisGrade" ColumnName="KisGrade" />
+          <ScalarProperty Name="ChemGrade" ColumnName="ChemGrade" />
+          <ScalarProperty Name="MathGrade" ColumnName="MathGrade" />
+          <ScalarProperty Name="HistGrade" ColumnName="HistGrade" />
+          <ScalarProperty Name="PhyGrade" ColumnName="PhyGrade" />
+          <ScalarProperty Name="GeogGrade" ColumnName="GeogGrade" />
+          <ScalarProperty Name="BstGrade" ColumnName="BstGrade" />
+          <ScalarProperty Name="CreGrade" ColumnName="CreGrade" />
+          <ScalarProperty Name="AgricGrade" ColumnName="AgricGrade" />
+          <ScalarProperty Name="BioGrade" ColumnName="BioGrade" />
+          <ScalarProperty Name="EngFinal" ColumnName="EngFinal" />
+          <ScalarProperty Name="KisFinal" ColumnName="KisFinal" />
+          <ScalarProperty Name="MathsFinal" ColumnName="MathsFinal" />
+          <ScalarProperty Name="ChemFinal" ColumnName="ChemFinal" />
+          <ScalarProperty Name="BioFinal" ColumnName="BioFinal" />
+          <ScalarProperty Name="PhyFinal" ColumnName="PhyFinal" />
+          <ScalarProperty Name="GeogFinal" ColumnName="GeogFinal" />
+          <ScalarProperty Name="HistFinal" ColumnName="HistFinal" />
+          <ScalarProperty Name="CreFinal" ColumnName="CreFinal" />
+          <ScalarProperty Name="AgricFinal" ColumnName="AgricFinal" />
+          <ScalarProperty Name="BstFinal" ColumnName="BstFinal" />
+          <ScalarProperty Name="ClassPosition" ColumnName="ClassPosition" />
+          <ScalarProperty Name="StreamPosition" ColumnName="StreamPosition" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamsMarkSheetBlanks">
+      <EntityTypeMapping TypeName="DIGITALModel.ExamsMarkSheetBlank">
+        <MappingFragment StoreEntitySet="ExamsMarkSheetBlank">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EngGrade" ColumnName="EngGrade" />
+          <ScalarProperty Name="KisGrade" ColumnName="KisGrade" />
+          <ScalarProperty Name="ChemGrade" ColumnName="ChemGrade" />
+          <ScalarProperty Name="MathGrade" ColumnName="MathGrade" />
+          <ScalarProperty Name="HistGrade" ColumnName="HistGrade" />
+          <ScalarProperty Name="PhyGrade" ColumnName="PhyGrade" />
+          <ScalarProperty Name="GeogGrade" ColumnName="GeogGrade" />
+          <ScalarProperty Name="BstGrade" ColumnName="BstGrade" />
+          <ScalarProperty Name="CreGrade" ColumnName="CreGrade" />
+          <ScalarProperty Name="AgricGrade" ColumnName="AgricGrade" />
+          <ScalarProperty Name="BioGrade" ColumnName="BioGrade" />
+          <ScalarProperty Name="EngFinal" ColumnName="EngFinal" />
+          <ScalarProperty Name="KisFinal" ColumnName="KisFinal" />
+          <ScalarProperty Name="MathsFinal" ColumnName="MathsFinal" />
+          <ScalarProperty Name="ChemFinal" ColumnName="ChemFinal" />
+          <ScalarProperty Name="BioFinal" ColumnName="BioFinal" />
+          <ScalarProperty Name="PhyFinal" ColumnName="PhyFinal" />
+          <ScalarProperty Name="GeogFinal" ColumnName="GeogFinal" />
+          <ScalarProperty Name="HistFinal" ColumnName="HistFinal" />
+          <ScalarProperty Name="CreFinal" ColumnName="CreFinal" />
+          <ScalarProperty Name="AgricFinal" ColumnName="AgricFinal" />
+          <ScalarProperty Name="BstFinal" ColumnName="BstFinal" />
+          <ScalarProperty Name="ClassPosition" ColumnName="ClassPosition" />
+          <ScalarProperty Name="StreamPosition" ColumnName="StreamPosition" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FEEs">
+      <EntityTypeMapping TypeName="DIGITALModel.FEE">
+        <MappingFragment StoreEntitySet="FEE">
+          <ScalarProperty Name="student_id" ColumnName="student_id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="INVOICE_FEE" ColumnName="INVOICE FEE" />
+          <ScalarProperty Name="BALANCE" ColumnName="BALANCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="iTeches">
+      <EntityTypeMapping TypeName="DIGITALModel.iTech">
+        <MappingFragment StoreEntitySet="iTech">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="SUBJECT" ColumnName="SUBJECT" />
+          <ScalarProperty Name="subjectMark" ColumnName="subjectMark" />
+          <ScalarProperty Name="GRADE" ColumnName="GRADE" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="StrPos" ColumnName="StrPos" />
+          <ScalarProperty Name="ClassPos" ColumnName="ClassPos" />
+          <ScalarProperty Name="SubjPosition" ColumnName="SubjPosition" />
+          <ScalarProperty Name="GenderPosition" ColumnName="GenderPosition" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="CurrentYr" ColumnName="CurrentYr" />
+          <ScalarProperty Name="CurrentTerm" ColumnName="CurrentTerm" />
+          <ScalarProperty Name="Cat" ColumnName="Cat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGINs">
+      <EntityTypeMapping TypeName="DIGITALModel.LOGIN">
+        <MappingFragment StoreEntitySet="LOGIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManageSchools">
+      <EntityTypeMapping TypeName="DIGITALModel.ManageSchool">
+        <MappingFragment StoreEntitySet="ManageSchool">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SCHOOL" ColumnName="SCHOOL" />
+          <ScalarProperty Name="SUBJECTS" ColumnName="SUBJECTS" />
+          <ScalarProperty Name="STREAMS" ColumnName="STREAMS" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="TERM" ColumnName="TERM" />
+          <ScalarProperty Name="CATS" ColumnName="CATS" />
+          <ScalarProperty Name="PRINCIPAL" ColumnName="PRINCIPAL" />
+          <ScalarProperty Name="DEPUTY" ColumnName="DEPUTY" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="subjects">
+      <EntityTypeMapping TypeName="DIGITALModel.subject">
+        <MappingFragment StoreEntitySet="subject">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Subj1" ColumnName="Subj1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DIGITALModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PivotExamples">
+      <EntityTypeMapping TypeName="DIGITALModel.PivotExample">
+        <MappingFragment StoreEntitySet="PivotExample">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="SalesAmount" ColumnName="SalesAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="EXAMSGRADING" FunctionName="DIGITALModel.Store.EXAMSGRADING" />
+    <FunctionImportMapping FunctionImportName="FILLCATS" FunctionName="DIGITALModel.Store.FILLCATS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DIGITALModel.FILLCATS_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="MAT" ColumnName="MAT" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEO" ColumnName="GEO" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="AGR" ColumnName="AGR" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GRADING" FunctionName="DIGITALModel.Store.GRADING" />
+    <FunctionImportMapping FunctionImportName="InsertRecord" FunctionName="DIGITALModel.Store.InsertRecord" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="DIGITALModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="DIGITALModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="DIGITALModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="DIGITALModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DIGITALModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="DIGITALModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DIGITALModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DIGITALModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DIGITALModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="UPDATECATS" FunctionName="DIGITALModel.Store.UPDATECATS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DIGITALModel.UPDATECATS_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="KCPE" ColumnName="KCPE" />
+          <ScalarProperty Name="ENG" ColumnName="ENG" />
+          <ScalarProperty Name="KIS" ColumnName="KIS" />
+          <ScalarProperty Name="MATHS" ColumnName="MATHS" />
+          <ScalarProperty Name="CHEM" ColumnName="CHEM" />
+          <ScalarProperty Name="BIO" ColumnName="BIO" />
+          <ScalarProperty Name="PHY" ColumnName="PHY" />
+          <ScalarProperty Name="GEOG" ColumnName="GEOG" />
+          <ScalarProperty Name="HIST" ColumnName="HIST" />
+          <ScalarProperty Name="CRE" ColumnName="CRE" />
+          <ScalarProperty Name="AGRIC" ColumnName="AGRIC" />
+          <ScalarProperty Name="BST" ColumnName="BST" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+          <ScalarProperty Name="STREAM" ColumnName="STREAM" />
+          <ScalarProperty Name="CAT" ColumnName="CAT" />
+          <ScalarProperty Name="FORM" ColumnName="FORM" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="EngGrade" ColumnName="EngGrade" />
+          <ScalarProperty Name="KisGrade" ColumnName="KisGrade" />
+          <ScalarProperty Name="ChemGrade" ColumnName="ChemGrade" />
+          <ScalarProperty Name="MathGrade" ColumnName="MathGrade" />
+          <ScalarProperty Name="HistGrade" ColumnName="HistGrade" />
+          <ScalarProperty Name="PhyGrade" ColumnName="PhyGrade" />
+          <ScalarProperty Name="GeogGrade" ColumnName="GeogGrade" />
+          <ScalarProperty Name="BstGrade" ColumnName="BstGrade" />
+          <ScalarProperty Name="CreGrade" ColumnName="CreGrade" />
+          <ScalarProperty Name="AgricGrade" ColumnName="AgricGrade" />
+          <ScalarProperty Name="BioGrade" ColumnName="BioGrade" />
+          <ScalarProperty Name="EngFinal" ColumnName="EngFinal" />
+          <ScalarProperty Name="KisFinal" ColumnName="KisFinal" />
+          <ScalarProperty Name="MathsFinal" ColumnName="MathsFinal" />
+          <ScalarProperty Name="ChemFinal" ColumnName="ChemFinal" />
+          <ScalarProperty Name="BioFinal" ColumnName="BioFinal" />
+          <ScalarProperty Name="PhyFinal" ColumnName="PhyFinal" />
+          <ScalarProperty Name="GeogFinal" ColumnName="GeogFinal" />
+          <ScalarProperty Name="HistFinal" ColumnName="HistFinal" />
+          <ScalarProperty Name="CreFinal" ColumnName="CreFinal" />
+          <ScalarProperty Name="AgricFinal" ColumnName="AgricFinal" />
+          <ScalarProperty Name="BstFinal" ColumnName="BstFinal" />
+          <ScalarProperty Name="ClassPosition" ColumnName="ClassPosition" />
+          <ScalarProperty Name="StreamPosition" ColumnName="StreamPosition" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

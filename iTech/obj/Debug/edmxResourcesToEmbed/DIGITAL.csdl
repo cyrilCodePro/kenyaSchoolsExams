@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DIGITALModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AddStudent">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BIRTH" Type="Int32" Nullable="false" />
+    <Property Name="KCPE" Type="Int32" Nullable="false" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RESIDENCE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PARENTS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="BALANCE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="INVOICE_FEE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="GENDER" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TERM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CAT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HOMESCI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="COMP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="iTeches" Relationship="Self.FK_iTech_ToTable" FromRole="AddStudents" ToRole="iTech" />
+  </EntityType>
+  <EntityType Name="catAll">
+    <Key>
+      <PropertyRef Name="Adm_No" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Adm_No" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="KCPE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Stream" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Form" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Cat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Terrm" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Total" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Cat">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KCPE" Type="Int32" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Total" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CAT1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathsFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ClassPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="StreamPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CatsHistory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KCPE" Type="Int32" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Total" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CAT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathsFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ClassPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="StreamPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="CatsMarkSheetBlank">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KCPE" Type="Int32" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Total" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CAT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathsFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ClassPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="StreamPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Exam">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KCPE" Type="Int32" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Total" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CAT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathsFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ClassPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="StreamPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ExamsHistory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KCPE" Type="Int32" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Total" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CAT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathsFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ClassPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="StreamPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="ExamsMarkSheetBlank">
+    <Key>
+      <PropertyRef Name="ADM" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KCPE" Type="Int32" />
+    <Property Name="ENG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KIS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MATHS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CHEM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BIO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GEOG" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HIST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CRE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AGRIC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BST" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Total" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Term" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CAT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioGrade" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EngFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="KisFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MathsFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ChemFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BioFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PhyFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GeogFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="HistFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CreFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="AgricFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BstFinal" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ClassPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="StreamPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FEE">
+    <Key>
+      <PropertyRef Name="student_id" />
+    </Key>
+    <Property Name="student_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="INVOICE_FEE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="BALANCE" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="iTech">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SUBJECT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="subjectMark" Type="Int32" />
+    <Property Name="GRADE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Points" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="StrPos" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ClassPos" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SubjPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="GenderPosition" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="FORM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CurrentYr" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CurrentTerm" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Cat" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="AddStudent" Relationship="Self.FK_iTech_ToTable" FromRole="iTech" ToRole="AddStudents" />
+  </EntityType>
+  <EntityType Name="LOGIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ManageSchool">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SCHOOL" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SUBJECTS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="STREAMS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YEAR" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TERM" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CATS" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PRINCIPAL" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DEPUTY" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="EMAIL" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="subject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Subj1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PivotExample">
+    <Key>
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Year" Type="Int16" Nullable="false" />
+    <Property Name="SalesAmount" Type="Decimal" Precision="19" Scale="4" />
+  </EntityType>
+  <Association Name="FK_iTech_ToTable">
+    <End Role="AddStudents" Type="Self.AddStudent" Multiplicity="0..1" />
+    <End Role="iTech" Type="Self.iTech" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AddStudents">
+        <PropertyRef Name="ADM" />
+      </Principal>
+      <Dependent Role="iTech">
+        <PropertyRef Name="ADM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DIGITALEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AddStudents" EntityType="Self.AddStudent" />
+    <EntitySet Name="catAlls" EntityType="Self.catAll" />
+    <EntitySet Name="Cats" EntityType="Self.Cat" />
+    <EntitySet Name="CatsHistories" EntityType="Self.CatsHistory" />
+    <EntitySet Name="CatsMarkSheetBlanks" EntityType="Self.CatsMarkSheetBlank" />
+    <EntitySet Name="Exams" EntityType="Self.Exam" />
+    <EntitySet Name="ExamsHistories" EntityType="Self.ExamsHistory" />
+    <EntitySet Name="ExamsMarkSheetBlanks" EntityType="Self.ExamsMarkSheetBlank" />
+    <EntitySet Name="FEEs" EntityType="Self.FEE" />
+    <EntitySet Name="iTeches" EntityType="Self.iTech" />
+    <EntitySet Name="LOGINs" EntityType="Self.LOGIN" />
+    <EntitySet Name="ManageSchools" EntityType="Self.ManageSchool" />
+    <EntitySet Name="subjects" EntityType="Self.subject" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="PivotExamples" EntityType="Self.PivotExample" />
+    <AssociationSet Name="FK_iTech_ToTable" Association="Self.FK_iTech_ToTable">
+      <End Role="AddStudents" EntitySet="AddStudents" />
+      <End Role="iTech" EntitySet="iTeches" />
+    </AssociationSet>
+    <FunctionImport Name="EXAMSGRADING" />
+    <FunctionImport Name="FILLCATS" ReturnType="Collection(DIGITALModel.FILLCATS_Result)" />
+    <FunctionImport Name="GRADING" />
+    <FunctionImport Name="InsertRecord">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="ADM" Mode="In" Type="String" />
+      <Parameter Name="KCPE" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(DIGITALModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(DIGITALModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="UPDATECATS" ReturnType="Collection(DIGITALModel.UPDATECATS_Result)" />
+  </EntityContainer>
+  <ComplexType Name="FILLCATS_Result">
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ADM" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="MAT" Nullable="true" />
+    <Property Type="Int32" Name="ENG" Nullable="true" />
+    <Property Type="Int32" Name="KIS" Nullable="true" />
+    <Property Type="Int32" Name="CHEM" Nullable="true" />
+    <Property Type="Int32" Name="BIO" Nullable="true" />
+    <Property Type="Int32" Name="PHY" Nullable="true" />
+    <Property Type="Int32" Name="GEO" Nullable="true" />
+    <Property Type="Int32" Name="HIST" Nullable="true" />
+    <Property Type="Int32" Name="CRE" Nullable="true" />
+    <Property Type="Int32" Name="BST" Nullable="true" />
+    <Property Type="Int32" Name="AGR" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="UPDATECATS_Result">
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ADM" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="KCPE" Nullable="true" />
+    <Property Type="String" Name="ENG" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="KIS" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="MATHS" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CHEM" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="BIO" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PHY" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="GEOG" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="HIST" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CRE" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="AGRIC" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="BST" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Total" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Points" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Year" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Term" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="STREAM" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CAT" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="FORM" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Grade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="EngGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="KisGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ChemGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="MathGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="HistGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PhyGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="GeogGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="BstGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CreGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="AgricGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="BioGrade" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="EngFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="KisFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="MathsFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ChemFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="BioFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="PhyFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="GeogFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="HistFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="CreFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="AgricFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="BstFinal" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="ClassPosition" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="StreamPosition" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="10" />
+  </ComplexType>
+</Schema>

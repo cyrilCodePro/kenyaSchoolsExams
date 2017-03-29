@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C788D94C-857B-4211-963A-C1C8150139B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iTech</RootNamespace>
+    <AssemblyName>iTech</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BottomClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BottomClass.Designer.cs">
+      <DependentUpon>BottomClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatAnalysisMenue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatAnalysisMenue.Designer.cs">
+      <DependentUpon>CatAnalysisMenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatsReport.Designer.cs">
+      <DependentUpon>CatsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSubject.Designer.cs">
+      <DependentUpon>EditSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EndTermAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndTermAnalysis.Designer.cs">
+      <DependentUpon>EndTermAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EndTermSubjectChamps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndTermSubjectChamps.Designer.cs">
+      <DependentUpon>EndTermSubjectChamps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamBlankMarkSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamBlankMarkSheet.Designer.cs">
+      <DependentUpon>ExamBlankMarkSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExamsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExamsHistory.Designer.cs">
+      <DependentUpon>ExamsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExternalExam.Designer.cs">
+      <DependentUpon>ExternalExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iTechData.cs">
+      <DependentUpon>iTechData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iTechData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>iTechData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iTechSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iTechSplash.Designer.cs">
+      <DependentUpon>iTechSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iTechTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iTechTest.Designer.cs">
+      <DependentUpon>iTechTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iTechWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iTechWindow.Designer.cs">
+      <DependentUpon>iTechWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSchool.Designer.cs">
+      <DependentUpon>ManageSchool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTeachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTeachers.Designer.cs">
+      <DependentUpon>ManageTeachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarkSheetGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkSheetGenerate.Designer.cs">
+      <DependentUpon>MarkSheetGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeanForm.Designer.cs">
+      <DependentUpon>MeanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeanTestSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeanTestSubject.Designer.cs">
+      <DependentUpon>MeanTestSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeritListEndTerm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeritListEndTerm.Designer.cs">
+      <DependentUpon>MeritListEndTerm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeritListWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeritListWindow.Designer.cs">
+      <DependentUpon>MeritListWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpWindow.Designer.cs">
+      <DependentUpon>PopUpWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPORTFORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTFORM.Designer.cs">
+      <DependentUpon>REPORTFORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFormFinal.Designer.cs">
+      <DependentUpon>ReportFormFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ROWTEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROWTEST.Designer.cs">
+      <DependentUpon>ROWTEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolManagement.Designer.cs">
+      <DependentUpon>SchoolManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsData.Designer.cs">
+      <DependentUpon>StudentsData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsInSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsInSystem.Designer.cs">
+      <DependentUpon>StudentsInSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectAnalysis.Designer.cs">
+      <DependentUpon>SubjectAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectMean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectMean.Designer.cs">
+      <DependentUpon>SubjectMean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TESTREPORT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TESTREPORT.Designer.cs">
+      <DependentUpon>TESTREPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopGender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopGender.Designer.cs">
+      <DependentUpon>TopGender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopPerSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopPerSubject.Designer.cs">
+      <DependentUpon>TopPerSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopStudent.Designer.cs">
+      <DependentUpon>TopStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopTenForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopTenForms.Designer.cs">
+      <DependentUpon>TopTenForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStudents.Designer.cs">
+      <DependentUpon>ViewStudents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BottomClass.rdlc" />
+    <EmbeddedResource Include="BottomClass.resx">
+      <DependentUpon>BottomClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatAnalysisMenue.resx">
+      <DependentUpon>CatAnalysisMenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatMarkSheetBlank.rdlc" />
+    <EmbeddedResource Include="CatsReport.resx">
+      <DependentUpon>CatsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSubject.resx">
+      <DependentUpon>EditSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndTermAnalysis.resx">
+      <DependentUpon>EndTermAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndTermSubjectChamps.resx">
+      <DependentUpon>EndTermSubjectChamps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamsHistory.resx">
+      <DependentUpon>ExamsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamSubjectChampions.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSchool.resx">
+      <DependentUpon>ManageSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTeachers.resx">
+      <DependentUpon>ManageTeachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeanForm.resx">
+      <DependentUpon>MeanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLASSPOSITION.rdlc" />
+    <EmbeddedResource Include="ExamBlankMarkSheet.resx">
+      <DependentUpon>ExamBlankMarkSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExamMarkSheetBlank.rdlc" />
+    <EmbeddedResource Include="ExternalExam.resx">
+      <DependentUpon>ExternalExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iTechBlankMarkSheet.rdlc" />
+    <EmbeddedResource Include="iTechSplash.resx">
+      <DependentUpon>iTechSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iTechTest.resx">
+      <DependentUpon>iTechTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iTechWindow.resx">
+      <DependentUpon>iTechWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkSheetForChecking.rdlc" />
+    <EmbeddedResource Include="MarkSheetGenerate.resx">
+      <DependentUpon>MarkSheetGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeanSubjectEndTermTest.rdlc" />
+    <EmbeddedResource Include="MeanTestSubject.resx">
+      <DependentUpon>MeanTestSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeritList.rdlc" />
+    <EmbeddedResource Include="MeritListEndTerm.rdlc" />
+    <EmbeddedResource Include="MeritListEndTerm.resx">
+      <DependentUpon>MeritListEndTerm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeritListWindow.resx">
+      <DependentUpon>MeritListWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpWindow.resx">
+      <DependentUpon>PopUpWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="REPORTFORM.rdlc" />
+    <EmbeddedResource Include="REPORTFORM.resx">
+      <DependentUpon>REPORTFORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormFinal.rdlc" />
+    <EmbeddedResource Include="ReportFormFinal.resx">
+      <DependentUpon>ReportFormFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectMean.resx">
+      <DependentUpon>SubjectMean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectMeans.rdlc" />
+    <EmbeddedResource Include="ROWTEST.resx">
+      <DependentUpon>ROWTEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolManagement.resx">
+      <DependentUpon>SchoolManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentInSystem.rdlc" />
+    <EmbeddedResource Include="StudentsData.resx">
+      <DependentUpon>StudentsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsInSystem.resx">
+      <DependentUpon>StudentsInSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectAnalysis.rdlc" />
+    <EmbeddedResource Include="SubjectAnalysis.resx">
+      <DependentUpon>SubjectAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.rdlc" />
+    <EmbeddedResource Include="TESTREPORT.resx">
+      <DependentUpon>TESTREPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOP BY GENDER.rdlc" />
+    <EmbeddedResource Include="TopGender.resx">
+      <DependentUpon>TopGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopPerSubject.resx">
+      <DependentUpon>TopPerSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopStudent.resx">
+      <DependentUpon>TopStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopStudentByClass.rdlc" />
+    <EmbeddedResource Include="TopTenForms.resx">
+      <DependentUpon>TopTenForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopTenStudents.rdlc" />
+    <EmbeddedResource Include="ViewStudents.resx">
+      <DependentUpon>ViewStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="iTechData.xsc">
+      <DependentUpon>iTechData.xsd</DependentUpon>
+    </None>
+    <None Include="iTechData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>iTechData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="iTechData.xss">
+      <DependentUpon>iTechData.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR-olwp2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\getmart3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1465237916_user_accounts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mi_scare_report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences_desktop_printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\Close Window.png" />
+    <None Include="Resources\Close Window_50px.png" />
+    <None Include="Resources\Download From Cloud_50pxe.png" />
+    <None Include="Resources\aviation_stock11_by_klstock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

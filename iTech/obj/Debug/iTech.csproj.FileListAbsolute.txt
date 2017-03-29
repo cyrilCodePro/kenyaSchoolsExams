@@ -1,0 +1,121 @@
+c:\users\cyril tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\iTech.exe.config
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\iTech.exe
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\iTech.pdb
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.Login.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.Properties.Resources.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.csproj.GenerateResource.Cache
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.exe
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.pdb
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.StudentsData.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ViewStudents.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ManageUsers.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.SchoolManagement.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ExternalExam.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.CatsReport.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.MarkSheetGenerate.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ExamBlankMarkSheet.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.iTechSplash.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\RdlCompile.cache
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\RdlCompile.compiled
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.PopUpWindow.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.iTechWindow.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.iTechTest.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.REPORTFORM.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\FlashControlV71.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\bin\Debug\stdole.dll
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.SubjectAnalysis.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.StudentsInSystem.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.MeritListWindow.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ROWTEST.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.TopPerSubject.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.SubjectMean.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.MeanForm.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.TopStudent.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.TopGender.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.BottomClass.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ExamsHistory.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.EndTermAnalysis.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.MeritListEndTerm.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.MeanTestSubject.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ManageTeachers.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.TESTREPORT.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.EndTermSubjectChamps.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.TopTenForms.resources
+C:\Users\Cyril Tumbo\documents\visual studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ReportFormFinal.resources
+C:\Users\Cyril Tumbo\Documents\Visual Studio 2015\Projects\iTech\iTech\bin\Debug\MetroFramework.dll
+C:\Users\Cyril Tumbo\Documents\Visual Studio 2015\Projects\iTech\iTech\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Cyril Tumbo\Documents\Visual Studio 2015\Projects\iTech\iTech\obj\Debug\iTech.CatAnalysisMenue.resources
+C:\Users\Cyril Tumbo\Documents\Visual Studio 2015\Projects\iTech\iTech\bin\Debug\MetroFramework.Design.dll
+C:\Users\Cyril Tumbo\Documents\Visual Studio 2015\Projects\iTech\iTech\obj\Debug\iTech.ManageSchool.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.BottomClass.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.CatAnalysisMenue.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.CatsReport.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.EndTermAnalysis.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.EndTermSubjectChamps.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ExamsHistory.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.Form2.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ManageSchool.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ManageTeachers.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.MeanForm.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ExamBlankMarkSheet.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ExternalExam.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.Login.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.iTechSplash.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.iTechTest.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.iTechWindow.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ManageUsers.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.MarkSheetGenerate.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.MeanTestSubject.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.MeritListEndTerm.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.MeritListWindow.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.PopUpWindow.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.Properties.Resources.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.REPORTFORM.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ReportFormFinal.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.SubjectMean.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ROWTEST.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.SchoolManagement.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.StudentsData.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.StudentsInSystem.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.SubjectAnalysis.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.TESTREPORT.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.TopGender.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.TopPerSubject.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.TopStudent.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.TopTenForms.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.ViewStudents.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.csproj.GenerateResource.Cache
+E:\PRODATA\iTech\iTech\bin\Debug\iTech.exe.config
+E:\PRODATA\iTech\iTech\bin\Debug\iTech.exe
+E:\PRODATA\iTech\iTech\bin\Debug\iTech.pdb
+E:\PRODATA\iTech\iTech\bin\Debug\MetroFramework.Design.dll
+E:\PRODATA\iTech\iTech\bin\Debug\MetroFramework.dll
+E:\PRODATA\iTech\iTech\bin\Debug\MetroFramework.Fonts.dll
+E:\PRODATA\iTech\iTech\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\PRODATA\iTech\iTech\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.exe
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.pdb
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.EditSubject.resources
+E:\PRODATA\iTech\iTech\obj\Debug\iTech.csprojResolveAssemblyReference.cache
